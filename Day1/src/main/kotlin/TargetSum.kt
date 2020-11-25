@@ -35,9 +35,7 @@ fun getTargetSumParis(arr: IntArray, length: Int, targetValue: Int) {
         val diff = if (arr[index] < 0) targetValue + arr[index]
         else targetValue - arr[index]
 
-        if (tempMap.containsKey(diff)) {
-            println("${arr[index]} , $diff")
-        }
+        if (tempMap.containsKey(diff)) println("${arr[index]} , $diff")
         else tempMap[arr[index]] = diff
     }
 }
