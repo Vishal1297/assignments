@@ -36,8 +36,7 @@ fun getTargetSumParis(arr: IntArray, length: Int, targetValue: Int) {
         else targetValue - arr[index]
 
         if (tempMap.containsKey(diff)) {
-            intArrayOf(arr[index], diff).forEach { value -> print("$value ") }
-            println()
+            println("${arr[index]} , $diff")
         }
         else tempMap[arr[index]] = diff
     }
