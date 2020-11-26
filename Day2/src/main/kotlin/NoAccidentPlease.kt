@@ -6,15 +6,24 @@ fun main() {
 
     print("Enter Number Of Flights: ")
 
-    var N = scanner.nextInt()
+    val flightsCount = scanner.nextInt()
 
-    for (index in 0 until N){
-        print("Flight ${index+1}")
+    val coordinates = arrayOf( arrayOf(3), arrayOf(1) )
+
+    var flightsPath = arrayOf( flightsCount )
+
+
+    for (num in 0 until flightsCount){
+        print("Flight ${num+1} ")
         for (value in 0..2){
-            var time = scanner.nextInt()
-            var place = scanner.nextInt()
+
+            val time = scanner.nextInt()
+            val place = scanner.nextInt()
+
         }
     }
+
+    scanner.close()
 
 }
 
